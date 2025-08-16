@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7aERPDRkX3E=",
+  "success": true,
+  "projectFilePath": "D:\\Programiring\\Web\\WebAPItesting\\WebAPItesting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maksp\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.5\\microsoft.aspnetcore.openapi.9.0.5.nupkg.sha512",
+    "C:\\Users\\maksp\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
