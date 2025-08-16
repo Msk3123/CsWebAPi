@@ -8,6 +8,11 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5"/>
+        <PackageReference Include="NLog.Extensions.Logging" Version="6.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\LoggerService\LoggerService.csproj" />
     </ItemGroup>
 
 </Project>
