@@ -1,27 +1,20 @@
-using Contracts;
-using NLog;
-namespace LoggerService.Logger;
+using Microsoft.Extensions.Logging;
+using Contracts.Interfaces;
 
-public class LoggerManager : ILoggerManager
+namespace LoggerService.Logger
 {
-    private static NLog.ILogger logger = LogManager.GetCurrentClassLogger();
-    public LoggerManager()
+    public class LoggerManager : ILoggerManager
     {
-    }
-    public void LogDebug(string message)
-    {
-        logger.Debug(message);
-    }
-    public void LogError(string message)
-    {
-        logger.Error(message);
-    }
-    public void LogInfo(string message)
-    {
-        logger.Info(message);
-    }
-    public void LogWarn(string message)
-    {
-        logger.Warn(message);
+        private readonly ILogger<LoggerManager> _logger;
+
+        public LoggerManager(ILogger<LoggerManager> logger)
+        {
+            _logger = logger;
+        }
+
+        public void LogInfo(string message) => _logger.LogInformation(message);
+        public void LogWarn(string message) => _logger.LogWarning(message);
+        public void LogDebug(string message) => _logger.LogDebug(message);
+        public void LogError(string message) => _logger.LogError(message);
     }
 }

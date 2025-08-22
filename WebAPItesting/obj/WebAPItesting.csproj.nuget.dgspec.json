@@ -47,16 +47,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.5, )"
-            },
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[6.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -69,9 +59,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -124,11 +111,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
-              "target": "Package",
-              "version": "[9.0.5, )"
-            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.8, )"
             }
@@ -145,9 +138,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -204,13 +194,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
-              "version": "[9.0.5, )"
-            },
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[6.0.3, )"
+              "version": "[9.0.8, )"
             }
           },
           "imports": [
@@ -225,9 +211,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -262,6 +245,9 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
+              "D:\\Programiring\\Web\\Contracts\\Contracts.csproj": {
+                "projectPath": "D:\\Programiring\\Web\\Contracts\\Contracts.csproj"
+              },
               "D:\\Programiring\\Web\\Entities\\Entities.csproj": {
                 "projectPath": "D:\\Programiring\\Web\\Entities\\Entities.csproj"
               },
@@ -290,6 +276,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.8, )"
             },
             "NLog.Extensions.Logging": {
               "target": "Package",

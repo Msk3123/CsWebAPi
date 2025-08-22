@@ -1,15 +1,16 @@
-using Microsoft.EntityFrameworkCore;
 using Entities.Models;
-namespace Entities.Data;
+using Microsoft.EntityFrameworkCore;
 
-public class RepositoryContext:DbContext{
-    
-    public RepositoryContext(DbContextOptions options)
-        : base(options)
+namespace Entities.Data
+{
+    public class RepositoryContext : DbContext
     {
-    }
-    public DbSet<Company> Companies { get; set; }
-    public DbSet<Employee> Employees { get; set; }
+        public RepositoryContext(DbContextOptions<RepositoryContext> options)
+            : base(options)
+        {
+        }
 
-    
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+    }
 }

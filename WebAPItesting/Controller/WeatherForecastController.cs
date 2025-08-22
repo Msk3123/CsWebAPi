@@ -1,4 +1,4 @@
-using Contracts;
+using Contracts.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPItesting.Controller;
