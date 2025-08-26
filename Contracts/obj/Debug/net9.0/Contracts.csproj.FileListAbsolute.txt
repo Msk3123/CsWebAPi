@@ -1,0 +1,12 @@
+D:\Programiring\Web\Contracts\bin\Debug\net9.0\Contracts.deps.json
+D:\Programiring\Web\Contracts\bin\Debug\net9.0\Contracts.dll
+D:\Programiring\Web\Contracts\bin\Debug\net9.0\Contracts.pdb
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfoInputs.cache
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.AssemblyInfo.cs
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.csproj.CoreCompileInputs.cache
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.sourcelink.json
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.dll
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\refint\Contracts.dll
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.pdb
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\ref\Contracts.dll
