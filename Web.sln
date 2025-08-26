@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Cont
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{4D927EBC-223B-476A-AF96-5490820EB4D3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{505845CC-B237-4EAD-BD36-4A8C9AFACC53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{4D927EBC-223B-476A-AF96-5490820EB4D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D927EBC-223B-476A-AF96-5490820EB4D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D927EBC-223B-476A-AF96-5490820EB4D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{505845CC-B237-4EAD-BD36-4A8C9AFACC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{505845CC-B237-4EAD-BD36-4A8C9AFACC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{505845CC-B237-4EAD-BD36-4A8C9AFACC53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{505845CC-B237-4EAD-BD36-4A8C9AFACC53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
