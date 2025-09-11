@@ -8,7 +8,7 @@ builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
-
+builder.Services.AddAutoMapper(cfg => { }, typeof(Program).Assembly);
 builder.Services.AddControllers();
 
 var app = builder.Build();

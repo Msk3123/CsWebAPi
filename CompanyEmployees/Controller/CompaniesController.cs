@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Contracts.Interfaces;
+using Entities.Models;
 using LoggerService.Logger;
 using System;
+using AutoMapper;
+using Entities.DTO;
 
 namespace CompanyEmployees.Controller
 {
@@ -11,11 +14,13 @@ namespace CompanyEmployees.Controller
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
+        private readonly IMapper _mapper;
 
-        public CompaniesController(IRepositoryManager repository, ILoggerManager logger)
+        public CompaniesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
         {
             _repository = repository;
             _logger = logger;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -24,8 +29,11 @@ namespace CompanyEmployees.Controller
             try
             {
                 var companies = _repository.Company.GetAllCompanies(trackChanges: false);
-                return Ok(companies);
+                var companiesDto = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
+
+                return Ok(companiesDto);
             }
+
             catch (Exception ex)
             {
                 _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action {ex}");
