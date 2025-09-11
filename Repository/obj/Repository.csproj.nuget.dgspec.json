@@ -29,7 +29,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\Programiring\\Web\\Entities\\Entities.csproj": {
+                "projectPath": "D:\\Programiring\\Web\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

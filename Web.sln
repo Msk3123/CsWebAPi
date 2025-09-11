@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPItesting", "WebAPItesting\WebAPItesting.csproj", "{8C045903-E011-4EEB-90B1-A23921CB6D1A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees", "CompanyEmployees\CompanyEmployees.csproj", "{8C045903-E011-4EEB-90B1-A23921CB6D1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggerService", "LoggerService\LoggerService.csproj", "{274068CC-4107-4714-9C50-D56B14E263E7}"
 EndProject

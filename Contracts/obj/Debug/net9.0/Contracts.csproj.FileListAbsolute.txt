@@ -10,3 +10,7 @@ D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.dll
 D:\Programiring\Web\Contracts\obj\Debug\net9.0\refint\Contracts.dll
 D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.pdb
 D:\Programiring\Web\Contracts\obj\Debug\net9.0\ref\Contracts.dll
+D:\Programiring\Web\Contracts\bin\Debug\net9.0\Entities.dll
+D:\Programiring\Web\Contracts\bin\Debug\net9.0\Entities.pdb
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.csproj.AssemblyReference.cache
+D:\Programiring\Web\Contracts\obj\Debug\net9.0\Contracts.csproj.Up2Date
