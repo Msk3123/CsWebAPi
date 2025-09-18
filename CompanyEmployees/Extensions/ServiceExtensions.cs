@@ -3,6 +3,14 @@ using LoggerService.Logger;
 using Entities.Data;
 using Microsoft.EntityFrameworkCore;
 using Repository;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
+using Entities.ErrorModel;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Server.IIS;
 
 namespace CompanyEmployees.Extensions;
 
@@ -35,4 +43,5 @@ public static class ServiceExtensions
 
     public static void ConfigureRepositoryManager(this IServiceCollection services) =>
         services.AddScoped<IRepositoryManager, RepositoryManager>();
+    
 }

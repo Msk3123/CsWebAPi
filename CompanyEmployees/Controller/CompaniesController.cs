@@ -1,44 +1,50 @@
-using Microsoft.AspNetCore.Mvc;
-using Contracts.Interfaces;
-using Entities.Models;
-using LoggerService.Logger;
-using System;
 using AutoMapper;
+using Contracts.Interfaces;
 using Entities.DTO;
+using Microsoft.AspNetCore.Mvc;
 
-namespace CompanyEmployees.Controller
+namespace CompanyEmployees.Controller;
+
+[Route("api/companies")]
+[ApiController]
+public class CompaniesController : ControllerBase
 {
-    [Route("api/companies")]
-    [ApiController]
-    public class CompaniesController : ControllerBase
+    private readonly ILoggerManager _logger;
+    private readonly IMapper _mapper;
+    private readonly IRepositoryManager _repository;
+
+    public CompaniesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
     {
-        private readonly IRepositoryManager _repository;
-        private readonly ILoggerManager _logger;
-        private readonly IMapper _mapper;
+        _repository = repository;
+        _logger = logger;
+        _mapper = mapper;
+    }
 
-        public CompaniesController(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+
+    [HttpGet]
+    public IActionResult GetCompanies()
+    {
+        _logger.LogInfo("Fetching all companies from database");
+
+        var companies = _repository.Company.GetAllCompanies(false);
+        var companiesDto = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
+
+        _logger.LogInfo("Все вийшло! Ви получили інформацію про компанію");
+
+        return Ok(companiesDto);
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetCompany(Guid id)
+    {
+        var company = _repository.Company.GetCompany(id, false);
+        if (company == null)
         {
-            _repository = repository;
-            _logger = logger;
-            _mapper = mapper;
+            _logger.LogError($"Company with id: {id} doesn't exist in the database.");
+            return NotFound();
         }
 
-        [HttpGet]
-        public IActionResult GetCompanies()
-        {
-            try
-            {
-                var companies = _repository.Company.GetAllCompanies(trackChanges: false);
-                var companiesDto = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
-
-                return Ok(companiesDto);
-            }
-
-            catch (Exception ex)
-            {
-                _logger.LogError($"Something went wrong in the {nameof(GetCompanies)} action {ex}");
-                return StatusCode(500, "Internal server error");
-            }
-        }
+        var companyDto = _mapper.Map<CompanyDTO>(company);
+        return Ok(companyDto);
     }
 }

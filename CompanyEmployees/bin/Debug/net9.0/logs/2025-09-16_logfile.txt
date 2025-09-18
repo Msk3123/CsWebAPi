@@ -1,0 +1,47 @@
+2025-09-16 15:02:48.3702 ERROR Hosting failed to start
+2025-09-16 15:02:48.3779 ERROR Stopped program because of exception
+2025-09-16 15:04:09.5918 ERROR Hosting failed to start
+2025-09-16 15:04:09.6156 ERROR Stopped program because of exception
+2025-09-16 15:04:22.1438 ERROR Hosting failed to start
+2025-09-16 15:04:22.1596 ERROR Stopped program because of exception
+2025-09-16 15:06:44.9637 WARN Failed to determine the https port for redirect.
+2025-09-16 15:06:45.0876 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 15:06:45.0876 INFO Fetching all companies from database
+2025-09-16 15:06:45.7100 INFO Все вийшло
+2025-09-16 15:13:16.0089 INFO Application started successfully
+2025-09-16 15:13:39.0194 INFO Application started successfully
+2025-09-16 15:13:39.0787 ERROR Hosting failed to start
+2025-09-16 15:13:39.0807 ERROR Stopped program because of exception
+2025-09-16 15:14:27.4787 WARN Failed to determine the https port for redirect.
+2025-09-16 15:14:27.5801 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 15:14:27.5813 INFO Fetching all companies from database
+2025-09-16 15:14:28.1548 INFO Все вийшло
+2025-09-16 15:16:04.2563 INFO Application started successfully
+2025-09-16 15:16:31.6221 INFO Application started successfully
+2025-09-16 15:16:37.2397 INFO Fetching all companies from database
+2025-09-16 15:16:37.2768 INFO Все вийшло
+2025-09-16 15:16:43.3748 WARN Failed to determine the https port for redirect.
+2025-09-16 15:16:43.6001 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 15:16:43.6001 INFO Fetching all companies from database
+2025-09-16 15:16:44.9665 INFO Все вийшло
+2025-09-16 15:51:18.3389 INFO Application started successfully
+2025-09-16 15:53:21.3441 WARN Failed to determine the https port for redirect.
+2025-09-16 15:53:21.5872 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 15:53:21.5885 INFO Fetching all companies from database
+2025-09-16 15:53:23.6845 INFO Все вийшло
+2025-09-16 17:15:34.7138 INFO Application started successfully
+2025-09-16 17:15:38.4660 WARN Failed to determine the https port for redirect.
+2025-09-16 17:15:38.6674 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 17:15:38.6674 INFO Fetching all companies from database
+2025-09-16 17:15:40.5276 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-16 17:19:02.5587 INFO Application started successfully
+2025-09-16 17:19:11.8303 WARN Failed to determine the https port for redirect.
+2025-09-16 17:19:12.0169 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-16 17:19:12.0169 INFO Fetching all companies from database
+2025-09-16 17:19:13.1536 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-16 17:19:16.9301 INFO Fetching all companies from database
+2025-09-16 17:19:16.9765 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-16 17:19:22.3995 INFO Fetching all companies from database
+2025-09-16 17:19:22.4003 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-16 17:19:26.7549 INFO Fetching all companies from database
+2025-09-16 17:19:26.7549 INFO Все вийшло! Ви получили інформацію про компанію

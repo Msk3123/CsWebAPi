@@ -1,6 +1,6 @@
 using AutoMapper;
-using Entities.Models;
 using Entities.DTO;
+using Entities.Models;
 
 namespace CompanyEmployees.AutoMapper;
 
@@ -11,5 +11,7 @@ public class CompanyMappingProfile : Profile
         CreateMap<Company, CompanyDTO>()
             .ForMember(c => c.FullAddress,
                 opt => opt.MapFrom(x => x.Address + " " + x.Country));
+
+        CreateMap<Employee, EmployeeDTO>();
     }
 }

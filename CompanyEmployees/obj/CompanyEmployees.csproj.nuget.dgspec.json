@@ -86,6 +86,10 @@
             "NLog.Extensions.Logging": {
               "target": "Package",
               "version": "[6.0.3, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[5.3.14, )"
             }
           },
           "imports": [
@@ -308,6 +312,14 @@
             "Microsoft.Extensions.Logging.Abstractions": {
               "target": "Package",
               "version": "[9.0.8, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.3.8, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.3.14, )"
             }
           },
           "imports": [

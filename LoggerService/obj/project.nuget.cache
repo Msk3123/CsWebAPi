@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "RPOoa+6Aykg=",
+  "dgSpecHash": "AHjamAJ+1Q8=",
   "success": true,
   "projectFilePath": "D:\\Programiring\\Web\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
@@ -36,6 +36,8 @@
     "C:\\Users\\maksp\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\maksp\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\maksp\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\maksp\\.nuget\\packages\\nlog\\5.4.0\\nlog.5.4.0.nupkg.sha512",
+    "C:\\Users\\maksp\\.nuget\\packages\\nlog.extensions.logging\\5.3.14\\nlog.extensions.logging.5.3.14.nupkg.sha512",
     "C:\\Users\\maksp\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\maksp\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\maksp\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
@@ -60,5 +62,18 @@
     "C:\\Users\\maksp\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\maksp\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "LoggerService depends on NLog (>= 5.3.8) but NLog 5.3.8 was not found. NLog 5.4.0 was resolved instead.",
+      "projectPath": "D:\\Programiring\\Web\\LoggerService\\LoggerService.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Programiring\\Web\\LoggerService\\LoggerService.csproj",
+      "libraryId": "NLog",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }

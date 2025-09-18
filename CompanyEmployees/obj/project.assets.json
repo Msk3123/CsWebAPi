@@ -1024,6 +1024,25 @@
           }
         }
       },
+      "NLog.Web.AspNetCore/5.3.14": {
+        "type": "package",
+        "dependencies": {
+          "NLog.Extensions.Logging": "5.3.13"
+        },
+        "compile": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -1649,7 +1668,9 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Contracts": "1.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.8"
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.8",
+          "NLog": "5.3.8",
+          "NLog.Extensions.Logging": "5.3.14"
         },
         "compile": {
           "bin/placeholder/LoggerService.dll": {}
@@ -3562,6 +3583,31 @@
         "nlog.extensions.logging.nuspec"
       ]
     },
+    "NLog.Web.AspNetCore/5.3.14": {
+      "sha512": "cc6VM07vrRI73JhIhC2LWyDKgFtgNfXf5UmJ4841qhp81nCN5CmOm3/YIA0YgStOWihrM3jVNlNQtDgsZ6wrJg==",
+      "type": "package",
+      "path": "nlog.web.aspnetcore/5.3.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "N.png",
+        "README.md",
+        "lib/net461/NLog.Web.AspNetCore.dll",
+        "lib/net461/NLog.Web.AspNetCore.xml",
+        "lib/net5.0/NLog.Web.AspNetCore.dll",
+        "lib/net5.0/NLog.Web.AspNetCore.xml",
+        "lib/net6.0/NLog.Web.AspNetCore.dll",
+        "lib/net6.0/NLog.Web.AspNetCore.xml",
+        "lib/net8.0/NLog.Web.AspNetCore.dll",
+        "lib/net8.0/NLog.Web.AspNetCore.xml",
+        "lib/netcoreapp3.1/NLog.Web.AspNetCore.dll",
+        "lib/netcoreapp3.1/NLog.Web.AspNetCore.xml",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.dll",
+        "lib/netstandard2.0/NLog.Web.AspNetCore.xml",
+        "nlog.web.aspnetcore.5.3.14.nupkg.sha512",
+        "nlog.web.aspnetcore.nuspec"
+      ]
+    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -4620,6 +4666,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 9.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.8",
       "NLog.Extensions.Logging >= 6.0.3",
+      "NLog.Web.AspNetCore >= 5.3.14",
       "Repository >= 1.0.0"
     ]
   },
@@ -4709,6 +4756,10 @@
           "NLog.Extensions.Logging": {
             "target": "Package",
             "version": "[6.0.3, )"
+          },
+          "NLog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "[5.3.14, )"
           }
         },
         "imports": [

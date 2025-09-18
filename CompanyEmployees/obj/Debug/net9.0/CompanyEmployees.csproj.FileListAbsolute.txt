@@ -172,3 +172,4 @@ D:\Programiring\Web\CompanyEmployees\obj\Debug\net9.0\CompanyEmployees.pdb
 D:\Programiring\Web\CompanyEmployees\obj\Debug\net9.0\CompanyEmployees.genruntimeconfig.cache
 D:\Programiring\Web\CompanyEmployees\obj\Debug\net9.0\ref\CompanyEmployees.dll
 D:\Programiring\Web\CompanyEmployees\bin\Debug\net9.0\AutoMapper.dll
+D:\Programiring\Web\CompanyEmployees\bin\Debug\net9.0\NLog.Web.AspNetCore.dll

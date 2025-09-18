@@ -17,6 +17,7 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "NLog.Extensions.Logging": "6.0.3",
+          "NLog.Web.AspNetCore": "5.3.14",
           "Repository": "1.0.0"
         },
         "runtime": {
@@ -785,6 +786,17 @@
           }
         }
       },
+      "NLog.Web.AspNetCore/5.3.14": {
+        "dependencies": {
+          "NLog.Extensions.Logging": "6.0.3"
+        },
+        "runtime": {
+          "lib/net8.0/NLog.Web.AspNetCore.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.3.14.1147"
+          }
+        }
+      },
       "System.ClientModel/1.0.0": {
         "dependencies": {
           "System.Memory.Data": "1.0.2",
@@ -1068,7 +1080,9 @@
       "LoggerService/1.0.0": {
         "dependencies": {
           "Contracts": "1.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.8"
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.8",
+          "NLog": "6.0.3",
+          "NLog.Extensions.Logging": "6.0.3"
         },
         "runtime": {
           "LoggerService.dll": {
@@ -1418,6 +1432,13 @@
       "sha512": "sha512-xQFejXRQG4l2ByhbnphDphHvf4wiOTUN7XGEB36/VpcB+HsTtB3KnWKaIgBBWjxM32bsDyyQqryh7y3KsOew4Q==",
       "path": "nlog.extensions.logging/6.0.3",
       "hashPath": "nlog.extensions.logging.6.0.3.nupkg.sha512"
+    },
+    "NLog.Web.AspNetCore/5.3.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cc6VM07vrRI73JhIhC2LWyDKgFtgNfXf5UmJ4841qhp81nCN5CmOm3/YIA0YgStOWihrM3jVNlNQtDgsZ6wrJg==",
+      "path": "nlog.web.aspnetcore/5.3.14",
+      "hashPath": "nlog.web.aspnetcore.5.3.14.nupkg.sha512"
     },
     "System.ClientModel/1.0.0": {
       "type": "package",
