@@ -1,6 +1,6 @@
 namespace Entities.DTO;
 
-public class DataTransferObjects
+public class CompanyDTO
 {
     public Guid Id { get; set; }
     public string Name { get; set; }

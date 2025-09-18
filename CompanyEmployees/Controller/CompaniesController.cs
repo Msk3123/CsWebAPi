@@ -28,14 +28,15 @@ public class CompaniesController : ControllerBase
         _logger.LogInfo("Fetching all companies from database");
 
         var companies = _repository.Company.GetAllCompanies(false);
-        var companiesDto = _mapper.Map<IEnumerable<DataTransferObjects>>(companies);
+        var companiesDto = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
 
         _logger.LogInfo("Все вийшло! Ви получили інформацію про компанію");
 
         return Ok(companiesDto);
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("{id}", Name = "CompanyById")]
+        
     public IActionResult GetCompany(Guid id)
     {
         var company = _repository.Company.GetCompany(id, false);
@@ -45,22 +46,27 @@ public class CompaniesController : ControllerBase
             return NotFound();
         }
 
-        var companyDto = _mapper.Map<DataTransferObjects>(company);
+        var companyDto = _mapper.Map<CompanyDTO>(company);
         return Ok(companyDto);
     }
 
     [HttpPost]
-    public IActionResult CreateCompany([FromBody] CompanyForCreationDto  company)
+    public IActionResult CreateCompany([FromBody] CompanyForCreationDto  companyDto)
     {
-        if (company == null)
+        if (companyDto == null)
         {
             _logger.LogError("Company is null");
+            return BadRequest("Company object is null");
+
         }
-        var companyEntity = _mapper.Map<Company>(company);
+        var companyEntity = _mapper.Map<Company>(companyDto);
         
         _repository.Company.CreateCompany(companyEntity);
         _repository.Save();
+        var companyToReturn = _mapper.Map<CompanyDTO>(companyEntity);
+
         _logger.LogInfo("Company created successfully");
-        return Ok();
+        
+        return CreatedAtRoute("CompanyById", new { id = companyToReturn.Id }, companyToReturn);
     }
 }
