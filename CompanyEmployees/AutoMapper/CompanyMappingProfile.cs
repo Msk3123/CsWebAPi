@@ -8,10 +8,12 @@ public class CompanyMappingProfile : Profile
 {
     public CompanyMappingProfile()
     {
-        CreateMap<Company, CompanyDTO>()
+        CreateMap<Company, DataTransferObjects>()
             .ForMember(c => c.FullAddress,
                 opt => opt.MapFrom(x => x.Address + " " + x.Country));
 
         CreateMap<Employee, EmployeeDTO>();
+        
+        CreateMap<CompanyForCreationDto, Company>();
     }
 }

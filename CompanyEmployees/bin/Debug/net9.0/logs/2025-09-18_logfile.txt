@@ -1,0 +1,20 @@
+2025-09-18 16:43:41.5709 INFO Application started successfully
+2025-09-18 16:43:54.3611 WARN Failed to determine the https port for redirect.
+2025-09-18 16:43:54.7157 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-18 16:43:54.7157 INFO Fetching all companies from database
+2025-09-18 16:43:57.5745 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-18 16:49:00.2891 INFO Application started successfully
+2025-09-18 16:49:04.4694 WARN Failed to determine the https port for redirect.
+2025-09-18 16:49:04.6835 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-18 16:49:17.1414 INFO Fetching all companies from database
+2025-09-18 16:49:18.6096 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-18 16:51:14.1861 INFO Application started successfully
+2025-09-18 16:51:22.0229 WARN Failed to determine the https port for redirect.
+2025-09-18 16:51:22.2192 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-18 16:51:22.2192 INFO Fetching all companies from database
+2025-09-18 16:51:23.3875 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-18 16:51:28.2446 INFO Fetching all companies from database
+2025-09-18 16:51:28.2912 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-18 16:51:34.5097 INFO Company created successfully
+2025-09-18 16:51:44.7724 INFO Fetching all companies from database
+2025-09-18 16:51:44.7748 INFO Все вийшло! Ви получили інформацію про компанію

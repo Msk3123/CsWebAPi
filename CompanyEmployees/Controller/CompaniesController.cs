@@ -2,6 +2,7 @@ using AutoMapper;
 using Contracts.Interfaces;
 using Entities.DTO;
 using Microsoft.AspNetCore.Mvc;
+using Entities.Models;
 
 namespace CompanyEmployees.Controller;
 
@@ -27,7 +28,7 @@ public class CompaniesController : ControllerBase
         _logger.LogInfo("Fetching all companies from database");
 
         var companies = _repository.Company.GetAllCompanies(false);
-        var companiesDto = _mapper.Map<IEnumerable<CompanyDTO>>(companies);
+        var companiesDto = _mapper.Map<IEnumerable<DataTransferObjects>>(companies);
 
         _logger.LogInfo("Все вийшло! Ви получили інформацію про компанію");
 
@@ -44,7 +45,22 @@ public class CompaniesController : ControllerBase
             return NotFound();
         }
 
-        var companyDto = _mapper.Map<CompanyDTO>(company);
+        var companyDto = _mapper.Map<DataTransferObjects>(company);
         return Ok(companyDto);
+    }
+
+    [HttpPost]
+    public IActionResult CreateCompany([FromBody] CompanyForCreationDto  company)
+    {
+        if (company == null)
+        {
+            _logger.LogError("Company is null");
+        }
+        var companyEntity = _mapper.Map<Company>(company);
+        
+        _repository.Company.CreateCompany(companyEntity);
+        _repository.Save();
+        _logger.LogInfo("Company created successfully");
+        return Ok();
     }
 }
