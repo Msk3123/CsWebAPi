@@ -66,9 +66,19 @@ public class EmployeesController : ControllerBase
             _logger.LogError("Employee is null");
             return BadRequest("Employee object is null");
         }
+        
+        var company = _repository.Company.GetCompany(companyId, false);
+        if (company == null)
+        {
+            _logger.LogError($"Company with id: {companyId} doesn't exist in the database.");
+            return BadRequest("Company doesn't exist");       
+        }
         var employeeEntity = _mapper.Map<Employee>(employeeDto);
         _repository.Employee.CreateEmployeeForCompany(companyId, employeeEntity);
-
+        _repository.Save();
+        _logger.LogInfo("Employee created successfully");
+        var employeeToReturn = _mapper.Map<EmployeeDTO>(employeeEntity);
+        return CreatedAtRoute("EmployeeById", new { companyId, employeeId  = employeeToReturn.Id }, employeeToReturn);
     }
 
 }
