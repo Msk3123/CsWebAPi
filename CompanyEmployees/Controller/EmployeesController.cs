@@ -2,6 +2,8 @@ using AutoMapper;
 using Contracts.Interfaces;
 using Entities.DTO;
 using Microsoft.AspNetCore.Mvc;
+using Entities.Models;
+
 
 namespace CompanyEmployees.Controller;
 
@@ -39,4 +41,34 @@ public class EmployeesController : ControllerBase
 
         return Ok(employeesDto);
     }
+
+    [HttpGet("{employeeId}", Name = "EmployeeById")]
+    public IActionResult GetEmployee(Guid companyId, Guid employeeId)
+    {
+        _logger.LogInfo("Fetching all employees from database");
+        var employee = _repository.Employee.GetEmployee(companyId, employeeId, false);
+        if (employee == null)
+        {
+            _logger.LogError($"Employee with id: {employeeId} doesn't exist in the database.");
+            return NotFound();
+        }
+
+        var employeeDto = _mapper.Map<EmployeeDTO>(employee);
+        return Ok(employeeDto);
+    }
+
+    [HttpPost]
+    public IActionResult CreateEmployee(Guid companyId,[FromBody] EmployeeForCreationDto employeeDto)
+    {
+        _logger.LogInfo("Creating new employee");
+        if (employeeDto == null)
+        {
+            _logger.LogError("Employee is null");
+            return BadRequest("Employee object is null");
+        }
+        var employeeEntity = _mapper.Map<Employee>(employeeDto);
+        _repository.Employee.CreateEmployeeForCompany(companyId, employeeEntity);
+
+    }
+
 }

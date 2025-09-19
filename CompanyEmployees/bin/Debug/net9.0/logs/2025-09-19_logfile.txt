@@ -1,0 +1,13 @@
+2025-09-19 20:04:44.5190 ERROR Stopped program because of exception
+2025-09-19 20:04:57.5801 ERROR Stopped program because of exception
+2025-09-19 20:08:24.3573 INFO Application started successfully
+2025-09-19 20:08:33.9790 INFO Application started successfully
+2025-09-19 20:08:38.2153 WARN Failed to determine the https port for redirect.
+2025-09-19 20:08:38.5117 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-09-19 20:08:38.5117 INFO Fetching all companies from database
+2025-09-19 20:08:39.8027 INFO Все вийшло! Ви получили інформацію про компанію
+2025-09-19 20:09:33.6272 INFO Fetching all employees from database
+2025-09-19 20:09:33.6561 INFO Все вийшло
+2025-09-19 20:10:07.9779 INFO Fetching all employees from database
+2025-09-19 20:10:07.9779 INFO Все вийшло
+2025-09-19 20:10:36.6497 INFO Fetching all employees from database

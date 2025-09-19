@@ -21,3 +21,10 @@ public class CompanyForCreationDto
     public string Address { get; set; }
     public string Country { get; set; }
 }
+
+public class EmployeeForCreationDto
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    public string Position { get; set; }
+}
