@@ -8,6 +8,7 @@ namespace Entities.Configuration
     {
         public void Configure(EntityTypeBuilder<Employee> builder)
         {
+            /*
             builder.HasData(
                 new Employee
                 {
@@ -33,7 +34,7 @@ namespace Entities.Configuration
                     Position = "Administrator",
                     CompanyId = new Guid("3d490a70-94ce-4d15-9494-5248280c2ce3")
                 }
-            );
+            ); */
         }
     }
 }

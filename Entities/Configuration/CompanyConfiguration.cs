@@ -8,6 +8,7 @@ namespace Entities.Configuration
     {
         public void Configure(EntityTypeBuilder<Company> builder)
         {
+            /*
             builder.HasData(
                 new Company
                 {
@@ -24,6 +25,7 @@ namespace Entities.Configuration
                     Country = "USA"
                 }
             );
+            */
         }
     }
 }
