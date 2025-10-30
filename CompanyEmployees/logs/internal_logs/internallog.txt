@@ -565,3 +565,26 @@
 2025-09-22 15:58:18.7914 Info Closing old configuration.
 2025-09-22 15:58:18.7914 Info AutoReload Config File Monitor stopping, since no active configuration
 2025-09-22 15:58:18.7914 Info LogFactory shutdown completed.
+2025-10-30 12:20:05.4419 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-10-30 12:20:05.4559 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-10-30 12:20:05.4674 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.3.4402. Product version: 6.0.3+e276e1969a52b8ecc5cc84c1670a516efea0cb19. GlobalAssemblyCache: False
+2025-10-30 12:20:05.4674 Info AutoReload Config File Monitor starting
+2025-10-30 12:20:05.5171 Info Configuration initialized.
+2025-10-30 12:20:05.5409 Warn Logger: CompanyEmployees.Program configured with duplicate output to target: FileTarget(Name=logfile). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-10-30 12:20:06.4356 Warn Logger: CompanyEmployees.Program configured with duplicate output to target: FileTarget(Name=logfile). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-10-30 12:25:17.3797 Info LogFactory shutting down ...
+2025-10-30 12:25:17.3797 Info Closing old configuration.
+2025-10-30 12:25:17.3797 Info AutoReload Config File Monitor stopping, since no active configuration
+2025-10-30 12:25:17.3878 Info LogFactory shutdown completed.
+2025-10-30 12:27:18.3351 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2025-10-30 12:27:18.3447 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-10-30 12:27:18.3447 Info NLog, Version=6.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 6.0.3.4402. Product version: 6.0.3+e276e1969a52b8ecc5cc84c1670a516efea0cb19. GlobalAssemblyCache: False
+2025-10-30 12:27:18.3557 Info AutoReload Config File Monitor starting
+2025-10-30 12:27:18.3833 Info Configuration initialized.
+2025-10-30 12:27:18.3916 Warn Logger: CompanyEmployees.Program configured with duplicate output to target: FileTarget(Name=logfile). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-10-30 12:27:18.5626 Warn Logger: CompanyEmployees.Program configured with duplicate output to target: FileTarget(Name=logfile). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-10-30 12:31:20.8927 Warn Logger: LoggerService.Logger.LoggerManager configured with duplicate output to target: FileTarget(Name=logfile). LoggingRule with NamePattern='*' and Level=Info has been skipped.
+2025-10-30 12:32:01.1500 Info LogFactory shutting down ...
+2025-10-30 12:32:01.1500 Info Closing old configuration.
+2025-10-30 12:32:01.1520 Info AutoReload Config File Monitor stopping, since no active configuration
+2025-10-30 12:32:01.1520 Info LogFactory shutdown completed.

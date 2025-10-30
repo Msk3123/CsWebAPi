@@ -58,7 +58,7 @@ public class EmployeesController : ControllerBase
     }
 
     [HttpPost]
-    public IActionResult CreateEmployee(Guid companyId,[FromBody] EmployeeForCreationDto employeeDto)
+    public IActionResult CreateEmployee(Guid companyId, [FromBody] EmployeeForCreationDto employeeDto)
     {
         _logger.LogInfo("Creating new employee");
         if (employeeDto == null)
@@ -66,19 +66,48 @@ public class EmployeesController : ControllerBase
             _logger.LogError("Employee is null");
             return BadRequest("Employee object is null");
         }
-        
+
         var company = _repository.Company.GetCompany(companyId, false);
         if (company == null)
         {
             _logger.LogError($"Company with id: {companyId} doesn't exist in the database.");
-            return BadRequest("Company doesn't exist");       
+            return BadRequest("Company doesn't exist");
         }
+
         var employeeEntity = _mapper.Map<Employee>(employeeDto);
         _repository.Employee.CreateEmployeeForCompany(companyId, employeeEntity);
         _repository.Save();
         _logger.LogInfo("Employee created successfully");
         var employeeToReturn = _mapper.Map<EmployeeDTO>(employeeEntity);
-        return CreatedAtRoute("EmployeeById", new { companyId, employeeId  = employeeToReturn.Id }, employeeToReturn);
+        return CreatedAtRoute("EmployeeById", new { companyId, employeeId = employeeToReturn.Id }, employeeToReturn);
+    }
+
+    [HttpDelete("{employeeId}")]
+    public IActionResult DeleteEmployee(Guid companyId, Guid employeeId)
+    {
+        
+        _logger.LogInfo("Deleting employee");
+        if (employeeId == null)
+        {
+            _logger.LogError("Employee id is null");
+            return BadRequest("Employee id is null");
+        }
+
+        if (companyId == null)
+        {
+            _logger.LogError("Company id is null");
+            return BadRequest("Company id is null");
+        }
+        var employee = _repository.Employee.GetEmployee(companyId, employeeId, false);
+        if (employee == null)
+        {
+            _logger.LogError($"Employee with id: {employeeId} doesn't exist in the database.");
+            return NotFound();
+        }
+        _repository.Employee.DeleteEmployee(employee);
+        _repository.Save();
+        _logger.LogInfo("Employee deleted successfully");
+        return NoContent();
     }
 
 }

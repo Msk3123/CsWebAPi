@@ -1,0 +1,8 @@
+2025-10-30 12:20:06.6252 INFO Application started successfully
+2025-10-30 12:27:18.6767 INFO Application started successfully
+2025-10-30 12:31:20.6314 WARN Failed to determine the https port for redirect.
+2025-10-30 12:31:21.0235 WARN You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-30 12:31:21.0296 INFO Fetching all companies from database
+2025-10-30 12:31:22.8383 INFO Все вийшло! Ви получили інформацію про компанію
+2025-10-30 12:31:50.5465 INFO Deleting employee
+2025-10-30 12:31:50.9532 INFO Employee deleted successfully
